@@ -1,0 +1,18 @@
+import 'package:flutter/material.dart';
+import 'package:responsive_dashboard/widget/adaptive_layout_widget.dart';
+import 'package:responsive_dashboard/widget/dashboard_desktop_layout.dart';
+
+class DashboardPage extends StatelessWidget {
+  const DashboardPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: AdaptiveLayoutWidget(
+        mobileBuilder: (context) => const SizedBox(),
+        tabletBuilder: (context) => const SizedBox(),
+        desktopBuilder: (context) => const DashboardDesktopLayout(),
+      ),
+    );
+  }
+}
