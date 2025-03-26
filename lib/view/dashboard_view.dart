@@ -8,6 +8,7 @@ class DashboardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xfff7f9fa),
       body: AdaptiveLayoutWidget(
         mobileBuilder: (context) => const SizedBox(),
         tabletBuilder: (context) => const SizedBox(),
