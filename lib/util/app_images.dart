@@ -18,6 +18,8 @@ class Assets {
 
   static const String imagesConvertCard = "assets/images/convert-card.svg";
 
+  static const String imagesGallery = "assets/images/gallery.svg";
+
   static const String imagesGraph = "assets/images/graph.svg";
 
   static const String imagesLogout = "assets/images/logout.svg";
