@@ -16,7 +16,6 @@ class ResponsiveDashboard extends StatelessWidget {
         primarySwatch: Colors.blue,
         useMaterial3: true,
       ),
-      debugShowCheckedModeBanner: false,
       home: const DashboardPage(),
     );
   }
