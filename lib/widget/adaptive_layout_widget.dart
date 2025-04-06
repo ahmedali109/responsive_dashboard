@@ -15,11 +15,13 @@ class AdaptiveLayoutWidget extends StatelessWidget {
     return LayoutBuilder(builder: (context , constraints){
       if(constraints.maxWidth < 800){
         return mobileBuilder(context);
+        // This is the breakpoint for mobile
       } else if(constraints.maxWidth < 900){
         return tabletBuilder(context);
-        // This is the breakpoint for tablet and desktop
+        // This is the breakpoint for tablet
       } else {
         return desktopBuilder(context);
+        // This is the breakpoint for desktop
       }
     });
   }
